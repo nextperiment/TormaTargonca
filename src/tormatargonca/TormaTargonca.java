@@ -2,6 +2,7 @@ package tormatargonca;
 
 import tormatargonca.entity.*;
 import tormatargonca.enumok.*;
+import tormatargonca.kodtar.KincsLista;
 
 public class TormaTargonca {
 
@@ -21,7 +22,15 @@ public class TormaTargonca {
             System.out.println("tipus: nem lény");
         }
 
+        System.out.println("");
+        System.out.println("Kincslista: ");
+
+        for (Kincs kk : KincsLista.LISTA) {
+            System.out.println(kk.getId() + " " + kk.getNev() + ", ");
+        }
+
         // itt a vége
         System.out.println("Eddig runt...");
+
     }
 }
